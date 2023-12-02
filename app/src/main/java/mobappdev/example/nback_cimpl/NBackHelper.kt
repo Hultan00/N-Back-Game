@@ -4,7 +4,7 @@ package mobappdev.example.nback_cimpl
  * This class provides the connection to the C-model
  *
  * The class loads the JniBridge when it is initialized.
- * Secondly, it provides the funtion generateNBackString to the rest of the code.
+ * Secondly, it provides the function generateNBackString to the rest of the code.
  *
  * Date: 25-08-2023
  * Version: Version 1.1

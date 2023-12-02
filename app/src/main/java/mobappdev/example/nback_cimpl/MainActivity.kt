@@ -72,7 +72,7 @@ class MainActivity : ComponentActivity() {
                 HomeScreen(navController = navController, vm = gameViewModel, t2s = textToSpeechManager)
             }
             composable("game") {
-                GameScreen(navController = navController, vm = gameViewModel, t2s = textToSpeechManager)
+                GameScreen(vm = gameViewModel, navController = navController)
             }
             composable("settings") {
                 SettingsScreen(vm = gameViewModel, navController = navController)
@@ -80,7 +80,7 @@ class MainActivity : ComponentActivity() {
         }
     }
 
-    fun initTextToSpeech(){
+    private fun initTextToSpeech(){
         textToSpeechManager = TextToSpeechManager(this, object : TextToSpeech.OnInitListener {
             override fun onInit(status: Int) {
                 if (status == TextToSpeech.SUCCESS) {

@@ -41,7 +41,6 @@ import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
 import kotlinx.coroutines.launch
 import mobappdev.example.nback_cimpl.R
-import mobappdev.example.nback_cimpl.TextToSpeechManager
 import mobappdev.example.nback_cimpl.ui.theme.BlinkBlue
 import mobappdev.example.nback_cimpl.ui.theme.StandbyBlue
 import mobappdev.example.nback_cimpl.ui.viewmodels.GameType
@@ -50,8 +49,7 @@ import mobappdev.example.nback_cimpl.ui.viewmodels.GameViewModel
 @Composable
 fun GameScreen(
     vm: GameViewModel,
-    navController: NavHostController,
-    t2s: TextToSpeechManager
+    navController: NavHostController
 ) {
     val score by vm.score.collectAsState()
     val gameState by vm.gameState.collectAsState()
@@ -108,7 +106,7 @@ fun GameScreen(
                                     // Todo: change this button behaviour
                                     navController.navigate("home")
                                 },
-                                enabled = gameStr.equals("Start Game"),
+                                enabled = gameStr == "Start Game",
                                 modifier = Modifier
                                     .size(70.dp)
                                     .align(Alignment.Center)
@@ -199,13 +197,13 @@ fun GameScreen(
 
                             Button(
                                 onClick = {
-                                    if (gameStr.equals("Start Game")) {
+                                    if (gameStr == "Start Game") {
                                         vm.startGame()
                                         gameStr = "Reset Game"
                                     } else {
                                         progress = 0.0F
                                         if(!gameState.isRunning) {
-                                            var score = vm.getScore()
+                                            val score = vm.getScore()
                                             scope.launch {
                                                 snackBarHostState.showSnackbar(
                                                     message = "SuccessRate: $score%",
@@ -281,7 +279,7 @@ fun GameScreen(
                             // Todo: change this button behaviour
                             navController.navigate("home")
                         },
-                        enabled = gameStr.equals("Start Game"),
+                        enabled = gameStr == "Start Game",
                         modifier = Modifier
                             .width(200.dp)
                             .height(70.dp),
@@ -350,13 +348,13 @@ fun GameScreen(
                     }
                 }
                 Button(onClick = {
-                    if(gameStr.equals("Start Game")){
+                    if(gameStr == "Start Game"){
                         vm.startGame()
                         gameStr = "Reset Game"
                     }else{
                         progress = 0.0F
                         if(!gameState.isRunning) {
-                            var score = vm.getScore()
+                            val score = vm.getScore()
                             scope.launch {
                                 snackBarHostState.showSnackbar(
                                     message = "SuccessRate: $score%",

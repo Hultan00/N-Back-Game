@@ -74,7 +74,7 @@ fun SettingsScreen(
                     .fillMaxSize()
                     .padding(16.dp)
             ) {
-                items(1) { index ->
+                items(1) {
                     Text(
                         text = "N-Back Value: $nBack",
                         style = MaterialTheme.typography.headlineMedium

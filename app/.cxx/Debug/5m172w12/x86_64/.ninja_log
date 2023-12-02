@@ -1,15 +1,7 @@
 # ninja log v5
-0	70	7218238531852442	CMakeFiles/nback_cimpl.dir/nback.c.o	764ab21b244d02b4
-4	80	7218238531857437	CMakeFiles/JniBridge.dir/JniBridge.c.o	133a3ddc30ebc5c8
-71	143	7218238532607428	C:/Users/ehgre/AndroidStudioProjects/nback_skeletoncode-master/app/build/intermediates/cxx/Debug/5m172w12/obj/x86_64/libnback_cimpl.so	25dddb19b19ed395
-143	211	7218238533292441	C:/Users/ehgre/AndroidStudioProjects/nback_skeletoncode-master/app/build/intermediates/cxx/Debug/5m172w12/obj/x86_64/libJniBridge.so	a275c0d6ab3a5552
+9	3720	7221631121157983	CMakeFiles/nback_cimpl.dir/nback.c.o	764ab21b244d02b4
+112	4361	7221631141360022	CMakeFiles/JniBridge.dir/JniBridge.c.o	133a3ddc30ebc5c8
+3724	10194	7221631197016080	C:/Users/ehgre/AndroidStudioProjects/nback_skeletoncode-master/app/build/intermediates/cxx/Debug/5m172w12/obj/x86_64/libnback_cimpl.so	25dddb19b19ed395
+10196	23396	7221631320375995	C:/Users/ehgre/AndroidStudioProjects/nback_skeletoncode-master/app/build/intermediates/cxx/Debug/5m172w12/obj/x86_64/libJniBridge.so	a275c0d6ab3a5552
 0	6	0	clean	d03a5640fd7a3ccb
-3	85	7218249812750719	CMakeFiles/nback_cimpl.dir/nback.c.o	764ab21b244d02b4
-7	100	7218249812775693	CMakeFiles/JniBridge.dir/JniBridge.c.o	133a3ddc30ebc5c8
-86	203	7218249813980685	C:/Users/ehgre/AndroidStudioProjects/nback_skeletoncode-master/app/build/intermediates/cxx/Debug/5m172w12/obj/x86_64/libnback_cimpl.so	25dddb19b19ed395
-203	318	7218249815140695	C:/Users/ehgre/AndroidStudioProjects/nback_skeletoncode-master/app/build/intermediates/cxx/Debug/5m172w12/obj/x86_64/libJniBridge.so	a275c0d6ab3a5552
-0	6	0	clean	d03a5640fd7a3ccb
-2	53	7218262674340709	CMakeFiles/nback_cimpl.dir/nback.c.o	764ab21b244d02b4
-5	61	7218262674345705	CMakeFiles/JniBridge.dir/JniBridge.c.o	133a3ddc30ebc5c8
-53	115	7218262675000711	C:/Users/ehgre/AndroidStudioProjects/nback_skeletoncode-master/app/build/intermediates/cxx/Debug/5m172w12/obj/x86_64/libnback_cimpl.so	25dddb19b19ed395
-115	194	7218262675785703	C:/Users/ehgre/AndroidStudioProjects/nback_skeletoncode-master/app/build/intermediates/cxx/Debug/5m172w12/obj/x86_64/libJniBridge.so	a275c0d6ab3a5552
+41	4232	7221637610209688	build.ninja	3d6bc78b2fad1433

@@ -274,9 +274,9 @@ class GameVM(
     }
 
     private fun updateHighscore(){
-        var matchesFloat = (_numberOfEvents.value * (30.0 / 100.0))
-        var matches = matchesFloat.toInt()
-        Log.d("GameVM", "Matches: ${matches}")
+        val matchesFloat = (_numberOfEvents.value * (30.0 / 100.0))
+        val matches = matchesFloat.toInt()
+        Log.d("GameVM", "Matches: $matches")
         var successrate = 0.0
         if(_score.value != 0) {
             Log.d("GameVM", "Score: ${_score.value}")
@@ -286,7 +286,7 @@ class GameVM(
         if(successrate.toInt() > _highscore.value) {
             Log.d("GameVM", "SuccessRate: $successrate")
             _highscore.value = successrate.toInt()
-            Log.d("GameVM", "HS: ${matches}")
+            Log.d("GameVM", "HS: $matches")
 
             viewModelScope.launch {
                 userPreferencesRepository.saveHighScore(_highscore.value)
@@ -295,9 +295,9 @@ class GameVM(
     }
 
     override fun getScore():Int{
-        var matchesFloat = (_numberOfEvents.value * (30.0 / 100.0))
-        var matches = matchesFloat.toInt()
-        Log.d("GameVM", "Matches: ${matches}")
+        val matchesFloat = (_numberOfEvents.value * (30.0 / 100.0))
+        val matches = matchesFloat.toInt()
+        Log.d("GameVM", "Matches: $matches")
         var successrate = 0.0
         if(_score.value != 0) {
             Log.d("GameVM", "Score: ${_score.value}")
@@ -315,7 +315,7 @@ class GameVM(
 
     private suspend fun runAudioGame(events: Array<Int>) {
         // Todo: Make work for Basic grade
-        var index = 0;
+        var index = 0
         _gameState.value = _gameState.value.copy(eventValueIndex = index)
         for (value in events) {
             _gameState.value = _gameState.value.copy(eventValue = value)
@@ -332,7 +332,7 @@ class GameVM(
 
     private suspend fun runVisualGame(events: Array<Int>){
         // Todo: Replace this code for actual game code
-        var index = 0;
+        var index = 0
         _gameState.value = _gameState.value.copy(eventValueIndex = index)
         for (value in events) {
             _gameState.value = _gameState.value.copy(eventValue = value)

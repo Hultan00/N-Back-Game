@@ -6,7 +6,7 @@ import android.speech.tts.TextToSpeech.OnInitListener
 import java.util.*
 
 class TextToSpeechManager(context: Context, private val onInitListener: OnInitListener? = null) :
-    TextToSpeech.OnInitListener {
+    OnInitListener {
 
     private val textToSpeech: TextToSpeech = TextToSpeech(context, this)
     private var initialized = false
