@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/ehgre/AndroidStudioProjects/nback_skeletoncode-master/app/src/main/cpp
+# Install script for directory: C:/Users/ehgre/AndroidStudioProjects/N-Back/nback_skeletoncode-master/app/src/main/cpp
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/ehgre/AndroidStudioProjects/nback_skeletoncode-master/app/.cxx/Debug/5m172w12/x86/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/ehgre/AndroidStudioProjects/N-Back/nback_skeletoncode-master/app/.cxx/Debug/5m172w12/x86/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

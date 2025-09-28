@@ -1,0 +1,4 @@
+C:/Users/ehgre/AndroidStudioProjects/N-Back/nback_skeletoncode-master/app/.cxx/Debug/6p3s6p5u/x86/CMakeFiles/nback_cimpl.dir
+C:/Users/ehgre/AndroidStudioProjects/N-Back/nback_skeletoncode-master/app/.cxx/Debug/6p3s6p5u/x86/CMakeFiles/JniBridge.dir
+C:/Users/ehgre/AndroidStudioProjects/N-Back/nback_skeletoncode-master/app/.cxx/Debug/6p3s6p5u/x86/CMakeFiles/edit_cache.dir
+C:/Users/ehgre/AndroidStudioProjects/N-Back/nback_skeletoncode-master/app/.cxx/Debug/6p3s6p5u/x86/CMakeFiles/rebuild_cache.dir
